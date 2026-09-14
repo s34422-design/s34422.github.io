@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงาน - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcf9f5;
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .navbar {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .navbar a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #8c7b75;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            display: inline-block;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            background-color: #ffb7b2;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 183, 178, 0.4);
+        }
+
+        .container {
+            max-width: 750px;
+            background: white;
+            margin: 0 auto;
+            padding: 45px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #4a403a;
+            border-bottom: 2px dashed #ffcad4;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .portfolio-img {
+            width: calc(50% - 10px);
+            max-width: 320px;
+            height: 220px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-img:hover {
+            transform: scale(1.03);
+        }
+
+        .activity-box {
+            background: #fffdf9;
+            padding: 22px 25px;
+            border-left: 4px solid #ffb7b2;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            line-height: 1.8;
+            color: #6a5e57;
+            text-align: justify;
+        }
+
+        @media (max-width: 600px) {
+            .portfolio-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="university.html">มหาวิทยาลัย & SOP</a>
+        <a href="portfolio.html" class="active">ผลงาน</a>
+        <a href="contact.html">ติดต่อ</a>
+    </div>
+
+    <div class="container">
+        <h2>กิจกรรมอบรมคุณธรรม จริยธรรม</h2>
+        
+        <div class="portfolio-gallery">
+            <img src="S__2244615.jpg" alt="ภาพกิจกรรมอบรมคุณธรรม 1" class="portfolio-img">
+            <img src="S__2244616_0.jpg" alt="ภาพกิจกรรมอบรมคุณธรรม 2" class="portfolio-img">
+        </div>
+
+        <div class="activity-box">
+            ดิฉันได้เข้าร่วมกิจกรรมอบรมคุณธรรมจริยธรรม ณ โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์” โดยได้ร่วมทำกิจกรรมกลุ่มและนำเสนอผลงานร่วมกับเพื่อนๆ กิจกรรมนี้ช่วยฝึกความสามัคคีความรับผิดชอบ การมีน้ำใจและการทำงานร่วมกับผู้อื่น อีกทั้งยังได้รับข้อคิดและสามารถนำหลักคุณธรรมไปปรับใช้ในชีวิตประจำวันได้ สิ่งที่ได้รับจากกิจกรรมนี้คือ การได้ฝึกการทำงานเป็นทีม กล้าแสดงความคิดเห็นและเรียนรู้การอยู่ร่วมกับผู้อื่น
+        </div>
+    </div>
+</body>
+</html>
